@@ -1,0 +1,26 @@
+{
+  // "extends": ["react-app", "airbnb"],
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "plugins": ["react", "react-hooks", "jsx-a11y", "import"],
+  "rules": {
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "no-console": 0,
+    "indent": 0,
+    "linebreak-style": 0,
+    "comma-dangle": ["error", "never"],
+    "semi": ["error", "always"],
+    "spaced-comment": "off",
+    "no-underscore-dangle": "off",
+    "no-trailing-spaces": "off",
+    "max-len": "off",
+
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+  },
+  "env": {
+    "browser": true
+  }
+}
