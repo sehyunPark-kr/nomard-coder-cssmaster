@@ -27,13 +27,16 @@
     "prettier-eslint": "^9.0.0"
   },
   "dependencies": {
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-grid-kiss": "^2.2.0",
     "postcss-preset-env": "^6.7.0"
   },
   "postcss": {
     "plugins": {
       "postcss-preset-env": {
         "stage": 0
-      }
+      },
+      "postcss-color-mod-function": {}
     }
   }
 }

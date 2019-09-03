@@ -1,39 +1,60 @@
-@custom-media --viewport-medium (width <= 50rem);
-@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+/* 
+Matches
 
+li:matches(:nth-child(even), .target) {
+  background-color: blue;
+} 
+
+li:not(.target) {
+  background-color: blue;
+}
+
+*/
+
+/* 
+vari
 :root {
-  --fontSize: 1rem;
-  --mainColor: #12345678;
-  --secondaryColor: lab(32.5 38.5 -47.6 / 90%);
+  --awesomeColor: #2980b9;
+  --awesomeBorder: 1px solid red;
 }
 
-html {
-  overflow: hidden auto;
-}
+li:first-child a {
+  color: var(--awesomeColor);
+  border: var(--awesomeBorder);
+} 
+*/
 
-@media (--viewport-medium) {
+/* 
+
+custom-selector
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  color: red;
+} 
+*/
+
+/* @custom-media --iphone-size (max-width: 414px); */
+/* @custom-media --iphone-size (width <= 414px); */
+/* 
+custom-media
+@custom-media --iphone-size (400px < width <= 414px);
+
+@media (--iphone-size) {
   body {
-    color: var(--mainColor);
-    font-family: system-ui;
-    font-size: var(--fontSize);
-    line-height: calc(var(--fontSize) * 1.5);
-    overflow-wrap: break-word;
-    padding-inline: calc(var(--fontSize) / 2 + 1px);
+    background-color: brown;
   }
-}
+} 
+*/
+/* h1 {
+  color: #f1c40f;
+  font-family: system-ui;
+} */
 
-:--heading {
-  margin-block: 0;
-}
-
-.hero:matches(main, .main) {
-  background-image: image-set('img/background.jpg' 1x, 'img/background-2x.jpg' 2x);
-}
-
-a {
-  color: rgb(0 0 100% / 90%);
-
-  &:hover {
-    color: rebeccapurple;
-  }
-}
+/* h1:hover {
+  color: color-mod(#f1c40f alpha(50%));
+} */
+/* h1:hover {
+  color: gray(80);
+} */
